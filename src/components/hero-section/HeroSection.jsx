@@ -16,7 +16,6 @@ import pinturaImg from '../../assets/images/pintura.jpg';
 export default function HeroSection() {
     return (
         <section className={styles.hero}>
-            {/* Carrusel de Swiper */}
             <Swiper
                 spaceBetween={0}
                 slidesPerView={1}
