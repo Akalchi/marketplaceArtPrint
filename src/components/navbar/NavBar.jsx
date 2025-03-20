@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './NavBar.module.css';
-import logoImgDark from '../../assets/artprintLogoDark.png';
+import logoImgDark from '../../assets/logos/artprintLogoDark.png';
 
 const Navbar = () => {
     return (
         <nav className={styles.navbar}>
             <div className={styles.logo}>
-                <img src={logoImgDark} alt="ArtPrint" />
+                <img src={logoImgDark} alt="ArtPrint Logo" />
             </div>
             <div className={styles.categories}>
                 <ul className={styles.categoryList}>

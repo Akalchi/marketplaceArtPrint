@@ -1,6 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './HeroSection.module.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css'; 
+import 'swiper/css/navigation'; 
+import 'swiper/css/pagination'; 
+import 'swiper/css/autoplay'; 
 
 
 export default function HeroSection() {
@@ -14,7 +19,7 @@ export default function HeroSection() {
                 </p>
                 <div className={styles.buttons}>
                     <Link to="/catalog">
-                        <button href='#src/pages/Catalog.jsx' className={styles.exploreButton}>
+                        <button className={styles.exploreButton}>
                             Explorar experiencias
                         </button>
                     </Link>
