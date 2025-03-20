@@ -1,0 +1,74 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--color-beige);
+    border-bottom: 1px solid var(--color-brown);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+}
+
+.categoryList {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-text);
+}
+
+.categoryList a {
+    color: var(--color-dark-blue);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.categoryList a:hover {
+    color: var(--color-medium-blue);
+}
+
+.navActions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.loginButton {
+    padding: 0.5rem 1rem;
+    background-color: var(--color-dark-blue);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--font-text);
+    transition: background-color 0.2s ease;
+}
+
+.loginButton:hover {
+    background-color: var(--color-medium-blue);
+}
+
+.cartIcon {
+    font-size: 1.5rem;
+    color: var(--color-dark-blue);
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.cartIcon:hover {
+    color: var(--color-medium-blue);
+}
