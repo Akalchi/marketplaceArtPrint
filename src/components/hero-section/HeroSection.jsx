@@ -14,7 +14,7 @@ export default function HeroSection() {
                 </p>
                 <div className={styles.buttons}>
                     <Link to="/catalog">
-                        <button className={styles.exploreButton}>
+                        <button href='#src/pages/Catalog.jsx' className={styles.exploreButton}>
                             Explorar experiencias
                         </button>
                     </Link>
