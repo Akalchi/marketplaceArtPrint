@@ -1,1 +1,13 @@
-
+@font-face {
+    font-family: 'Arsenica Antiqua';
+    src: url('/fonts/ArsenicaAntiqua.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Codec Pro';
+    src: url('/fonts/CodecPro.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }

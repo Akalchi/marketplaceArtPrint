@@ -1,1 +1,60 @@
-
+@font-face {
+    font-family: "Arsenica Antiqua";
+    src: url("/fonts/ArsenicaAntiqua.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Codec Pro";
+    src: url("/fonts/CodecPro.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  :root {
+    --color-beige: #fff8e7;
+    --color-brown: #563816;
+    --color-dark-blue: #18019c;
+    --color-medium-blue: #80b1f3;
+    --color-dark-green: #343c03;
+  
+    --font-title: "Arsenica Antiqua", serif;
+    --font-text: "Codec Pro", sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-text);
+    background-color: var(--color-beige);
+  }
+  
+  /* Estilos de reset */
+  
+  a {
+    text-decoration: none;
+    color: var(--color-dark-blue);
+  }
+  
+  a:hover {
+    color: var(--color-medium-blue);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .flex {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
