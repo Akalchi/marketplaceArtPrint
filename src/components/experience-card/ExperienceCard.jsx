@@ -16,7 +16,9 @@ const ExperienceCard = ({ title, city, format, description, price, image, onClic
         <p className={styles.description}>{description}</p>
         <div className={styles.footer}>
           <span className={styles.price}>{price}€</span>
-          <button className={styles.viewMoreButton} onClick={onClick}/> 
+          <button className={styles.viewMoreButton} onClick={onClick}>
+            Ver más
+          </button> 
         </div>
       </div>
     </div>

@@ -97,8 +97,10 @@
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-weight: bold;
 }
 
 .viewMoreButton:hover {
   background-color: var(--color-dark-blue);
+  color: var(--color-beige);
 }
