@@ -1,53 +1,105 @@
 .card {
   background-color: var(--color-beige);
-  border: 1px solid var(--color-brown);
-  padding: 20px;
-  border-radius: 8px;
-  font-family: "Codec Pro", sans-serif;
-}
-
-.title {
-  font-family: "Arsenica Antiqua", serif;
-  color: var(--color-dark-blue);
-  margin-bottom: 15px;
-  font-size: 1.5rem;
-}
-
-.locationType {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
   display: flex;
-  gap: 15px;
-  margin-bottom: 15px;
-  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
 }
 
-.city {
-  color: var(--color-dark-green);
+.card:hover {
+  transform: translateY(-4px);
 }
 
-.type {
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 0.9rem;
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: #3a4a0e;
+  color: white;
 }
 
 .online {
   background-color: var(--color-medium-blue);
-  color: white;
 }
 
 .presential {
-  background-color: var(--color-beige);
-  border: 1px solid var(--color-brown);
+  background-color: var(--color-dark-green);
+}
+
+.content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  font-family: var(--font-title);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-dark-blue);
+  margin-bottom: 4px;
+}
+
+.city {
+  font-size: 0.9rem;
+  color: var(--color-dark-green);
 }
 
 .description {
-  color: var(--color-dark-green);
-  margin-bottom: 15px;
+  font-size: 0.95rem;
+  color: var(--color-brown);
   line-height: 1.4;
+  height: 3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
 }
 
 .price {
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 600;
   color: var(--color-dark-blue);
-  font-size: 1.2rem;
+}
+
+.viewMoreButton {
+  background-color: transparent;
+  border: 1px solid var(--color-dark-blue);
+  color: var(--color-dark-blue);
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.viewMoreButton:hover {
+  background-color: var(--color-dark-blue);
+  color: white;
 }
