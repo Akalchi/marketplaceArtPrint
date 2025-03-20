@@ -13,7 +13,7 @@ const Navbar = () => {
                     <li><a href="#escritura">Escritura</a></li>
                     <li><a href="#acuarela">Acuarela</a></li>
                     <li><a href="#cocina">Cocina</a></li>
-                    <li><a href="#bordado">Bordado</a></li>
+                    <li><a href="#fotografía">Fotografía</a></li>
                     <li><a href="#cosmetica">Cosmética</a></li>
                 </ul>
             </div>
