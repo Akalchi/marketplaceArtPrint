@@ -19,6 +19,12 @@
     margin-left: 20px
 }
 
+.text {
+    font-family: var(--font-text);
+    color: var(--color-beige);
+    padding: 2px;
+}
+
 .categories {
     display: flex;
     justify-content: center;
@@ -41,6 +47,7 @@
 
 .categoryList a:hover {
     color: var(--color-medium-blue);
+    text-decoration: underline;
 }
 
 .navActions {
@@ -65,6 +72,7 @@
 
 .loginButton:hover {
     background-color: var(--color-medium-blue);
+    color: var(--color-beige);
 }
 
 .cartIcon {
