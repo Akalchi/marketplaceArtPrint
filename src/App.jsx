@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import Navbar from './components/navbar/Navbar';
+import Navbar from './components/navbar/NavBar';
 import ExperienceCategories from './components/experience-categories/ExperienceCategories';
-import HeroSection from './components/heroSection/HeroSection';
+import HeroSection from './components/hero-section/HeroSection';
 import Footer from './components/footer/Footer';
 import './styles/App.css';
 
