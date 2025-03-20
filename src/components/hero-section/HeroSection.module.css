@@ -13,7 +13,14 @@
 .title {
     font-family: var(--font-title);
     font-size: 3rem;
-    color: var(--color-dark-blue);
+    color: var(--color-dark-green);
+    margin-bottom: 1.5rem;
+}
+
+.subtitle {
+    font-family: var(--font-title);
+    font-size: 2rem;
+    color: var(--color-dark-green);
     margin-bottom: 1.5rem;
 }
 
@@ -46,6 +53,7 @@
 
 .exploreButton:hover {
     background-color: var(--color-medium-blue);
+    color: var(--color-dark-blue);
 }
 
 .howItWorksButton {
@@ -60,6 +68,7 @@
 }
 
 .howItWorksButton:hover {
-    background-color: var(--color-dark-blue);
-    color: white;
+    background-color: var(--color-medium-blue);
+    color: var(--color-dark-blue);
+    border: 2px solid transparent;
 }
