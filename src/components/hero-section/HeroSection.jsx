@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './HeroSection.module.css';
+
 
 export default function HeroSection() {
     return (
@@ -11,9 +13,11 @@ export default function HeroSection() {
                     Desconecta, explora y aprende disfrutando
                 </p>
                 <div className={styles.buttons}>
-                    <button className={styles.exploreButton}>
-                        Explorar experiencias
-                    </button>
+                    <Link to="/catalog">
+                        <button className={styles.exploreButton}>
+                            Explorar experiencias
+                        </button>
+                    </Link>
                     <button className={styles.howItWorksButton}>
                         ¿Cómo funciona?
                     </button>
