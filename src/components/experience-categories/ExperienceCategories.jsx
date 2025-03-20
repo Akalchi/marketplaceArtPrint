@@ -67,46 +67,11 @@ const experiences = [
   },
 ];
 
-/* const ExperienceCategories = () => {
-  return (
-    <div className={styles.experienceCategories}>
-      <h2 className={styles.h2}>Categorías</h2>
-      <div className={styles.categoriesList}>
-        {categories.map((category) => (
-          <button
-            key={category.id}
-            className={styles.categoryBtn}
-            aria-label={`Filtrar por ${category.name}`}
-          >
-            {category.name}
-          </button>
-        ))}
-      </div>
-      <h2 className={styles.h2}>Experiencias Destacadas</h2>
-      <div className={styles.featuredExperiences}>
-        {experiences.map((experience) => (
-          <div key={experience.id} className={styles.experienceCard}>
-            <img
-              src={experience.image}
-              alt={experience.title}
-              className={styles.experienceImage}
-            />
-            <h3>{experience.title}</h3>
-            <p>
-              {experience.category} · {experience.location}
-            </p>
-            <span className={styles.price}>{experience.price}€</span>
-            <span className={styles.type}>{experience.format}</span>
-            <button className={styles.detailsBtn}>Ver detalles</button>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}; */
 const ExperienceCategories = () => {
   return (
-      <><h2 className={styles.h2}>Experiencias Destacadas</h2><div className={styles.featuredExperiences}>
+      <>
+      <h2 className={styles.h2}>Experiencias Destacadas</h2>
+      <div className={styles.featuredExperiences}>
       {experiences.map((experience) => (
         <div key={experience.id} className={styles.experienceCard}>
           <img
@@ -121,8 +86,9 @@ const ExperienceCategories = () => {
           <span className={styles.type}>{experience.format}</span>
           <button className={styles.detailsBtn}>Ver detalles</button>
         </div>
-      ))}
-    </div></>
+        ))}
+      </div>
+      </>
   );
 };
 
