@@ -1,0 +1,92 @@
+.experienceCategories {
+  padding: 20px;
+  background-color: var(--color-beige);
+}
+
+.categoriesList {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--color-dark-green);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.categoryBtn {
+  background-color: var(--color-dark-green);
+  color: var(--color-beige);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.categoryBtn:hover {
+  background-color: var(--color-dark-blue);
+}
+
+.featuredExperiences {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.experienceCard {
+  background: var(--color-beige);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.experienceCard:hover {
+  transform: translateY(-5px);
+}
+
+.experienceImage {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.price {
+  font-weight: bold;
+  color: var(--color-brown);
+}
+
+.type {
+  font-size: 14px;
+  color: var(--color-medium-blue);
+}
+
+.detailsBtn {
+  background-color: var(--color-dark-green);
+  color: var(--color-beige);
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.detailsBtn:hover {
+  background-color: var(--color-dark-blue);
+}
+
+.h2 {
+  text-align: center;
+  width: 100%;
+  color: var(--color-dark-green);
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
