@@ -79,11 +79,12 @@ const ExperienceCategories = () => {
             alt={experience.title}
             className={styles.experienceImage} />
           <h3>{experience.title}</h3>
+          <span className={styles.type}>{experience.format}</span>
           <p>
             {experience.category} · {experience.location}
           </p>
           <span className={styles.price}>{experience.price}€</span>
-          <span className={styles.type}>{experience.format}</span>
+          
           <button className={styles.detailsBtn}>Ver detalles</button>
         </div>
         ))}
