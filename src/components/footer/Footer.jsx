@@ -27,6 +27,12 @@ const Footer = () => {
               <li>
                 <Link to="/categoria/cocina">Cocina</Link>
               </li>
+              <li>
+                <Link to="/categoria/cocina">Fotografía</Link>
+              </li>
+              <li>
+                <Link to="/categoria/cocina">Cosmética</Link>
+              </li>
             </ul>
           </div>
 
