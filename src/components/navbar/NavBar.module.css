@@ -22,7 +22,6 @@
 .text {
     font-family: var(--font-text);
     color: var(--color-beige);
-    padding: 2px;
 }
 
 .categories {
