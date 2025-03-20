@@ -56,9 +56,6 @@ export default function HeroSection() {
                             Explorar experiencias
                         </button>
                     </Link>
-                    <button className={styles.howItWorksButton}>
-                        ¿Cómo funciona?
-                    </button>
                 </div>
             </div>
         </section>
