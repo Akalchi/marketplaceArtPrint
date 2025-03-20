@@ -1,0 +1,55 @@
+/*ExperienceCard.module.css*/
+
+.card {
+    background-color: var(--color-beige);
+    border: 1px solid var(--color-brown);
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Codec Pro', sans-serif;
+}
+
+.title {
+    font-family: 'Arsenica Antiqua', serif;
+    color: var(--color-dark-blue);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.locationType {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.city {
+    color: var(--color-dark-green);
+}
+
+.type {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.online {
+    background-color: var(--color-medium-blue);
+    color: white;
+}
+
+.presential {
+    background-color: var(--color-beige);
+    border: 1px solid var(--color-brown);
+}
+
+.description {
+    color: var(--color-dark-green);
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.price {
+    font-weight: bold;
+    color: var(--color-dark-blue);
+    font-size: 1.2rem;
+}
