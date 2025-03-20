@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Navbar.module.css';
+import styles from './NavBar.module.css';
 import logoImgDark from '../../assets/artprintLogoDark.png';
 
 const Navbar = () => {
