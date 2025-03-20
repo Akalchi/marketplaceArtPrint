@@ -17,8 +17,14 @@
     width: auto;
     border-radius: 15%;
     margin-left: 20px
+  }
+  
+.logoLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 10px;
 }
-
 .text {
     font-family: var(--font-text);
     color: var(--color-beige);
