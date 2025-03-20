@@ -189,6 +189,7 @@ const ExperienciasPage = () => {
       city={exp.location}
       type={exp.format}
       price={exp.price}
+      image={exp.image}
       description="Una experiencia creativa para aprender y disfrutar."
     />
   </div>

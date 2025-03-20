@@ -18,8 +18,14 @@
     border-radius: 15%;
     margin-left: 20px
 }
-  
-  .categories {
+
+.text {
+    font-family: var(--font-text);
+    color: var(--color-beige);
+    padding: 2px;
+}
+
+.categories {
     display: flex;
     justify-content: center;
   }
@@ -41,9 +47,10 @@
   
   .categoryList a:hover {
     color: var(--color-medium-blue);
-  }
-  
-  .navActions {
+    text-decoration: underline;
+}
+
+.navActions {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -65,9 +72,10 @@
   
   .loginButton:hover {
     background-color: var(--color-medium-blue);
-  }
-  
-  .cartIcon {
+    color: var(--color-beige);
+}
+
+.cartIcon {
     font-size: 1.5rem;
     color: var(--color-dark-blue);
     cursor: pointer;

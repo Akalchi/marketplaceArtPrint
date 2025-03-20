@@ -9,7 +9,8 @@ const Navbar = () => {
       <nav className={styles.navbar}>
         <div className={styles.logo}>
           <Link to="/" className={styles.logoLink}>
-            <img src={logoImgDark} alt="ArtPrint" />
+            <img src={logoImgDark} alt="ArtPrint link Home" />
+            <p className={styles.text}>Home</p>
           </Link>
         </div>
 
