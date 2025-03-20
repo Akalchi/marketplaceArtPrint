@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { FiFilter, FiSearch } from "react-icons/fi";
 import ExperienceCard from "../components/experience-card/ExperienceCard";
+import ExperienceModal from "../components/experience-modal/ExperienceModal";
 import styles from "./Catalog.module.css";
 
 const experiences = [
@@ -78,6 +80,8 @@ const experiences = [
 ];
 
 const ExperienciasPage = () => {
+  const [selectedExperience, setSelectedExperience] = useState(null);
+
   return (
     <div className={styles.experienciasPage}>
       {/* Título */}
@@ -182,24 +186,31 @@ const ExperienciasPage = () => {
         </div>
 
         <div className={styles.experiencesGrid}>
-        {experiences.map((exp) => (
-  <div key={exp.id} className={styles.experienceCard}>
-    <ExperienceCard
-      title={exp.title}
-      city={exp.location}
-      type={exp.format}
-      price={exp.price}
-      description="Una experiencia creativa para aprender y disfrutar."
-    />
-  </div>
-))}
-
+          {experiences.map((exp) => (
+            <div key={exp.id} className={styles.experienceCard}>
+              <ExperienceCard
+                title={exp.title}
+                city={exp.location}
+                type={exp.format}
+                price={exp.price}
+                image={exp.image}
+                description="Una experiencia creativa para aprender y disfrutar."
+                onClick={() => setSelectedExperience(exp)}
+              />
+            </div>
+          ))}
         </div>
 
         <div className={styles.loadMoreContainer}>
           <button className={styles.loadMoreButton}>Cargar más experiencias</button>
         </div>
       </div>
+
+      {/* Modal */}
+      <ExperienceModal
+        experience={selectedExperience}
+        onClose={() => setSelectedExperience(null)}
+      />
     </div>
   );
 };
