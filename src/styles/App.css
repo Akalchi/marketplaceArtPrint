@@ -30,8 +30,6 @@
     background-color: var(--color-beige);
   }
   
-  /* Estilos de reset */
-  
   a {
     text-decoration: none;
     color: var(--color-dark-blue);
