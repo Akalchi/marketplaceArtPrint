@@ -1,9 +1,9 @@
-.experienceCategories {
+/* .experienceCategories {
   padding: 20px;
   background-color: var(--color-beige);
-}
+} */
 
-.categoriesList {
+/* .categoriesList {
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -14,9 +14,9 @@
   background-color: var(--color-dark-green);
   padding: 15px;
   border-radius: 8px;
-}
+} */
 
-.categoryBtn {
+/* .categoryBtn {
   background-color: var(--color-dark-green);
   color: var(--color-beige);
   border: none;
@@ -25,7 +25,7 @@
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s ease-in-out;
-}
+} */
 
 .categoryBtn:hover {
   background-color: var(--color-dark-blue);
