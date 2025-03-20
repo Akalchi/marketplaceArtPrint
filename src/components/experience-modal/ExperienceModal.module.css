@@ -43,7 +43,15 @@
     border: none;
     color: var(--color-dark-blue);
     cursor: pointer;
+    font-size: 24px;
+    transition: color 0.2s ease;
+    z-index: 9999;
   }
+  
+  .closeButton:hover {
+    color: var(--color-dark-green);
+  }
+  
   
   .imageWrapper {
     position: relative;
@@ -111,8 +119,8 @@
     margin-bottom: 24px;
   }
   
-  .reserveButton {
-    background-color: var(--color-dark-blue);
+  .addToCartButton {
+    background-color: var(--color-dark-green);
     color: white;
     padding: 12px 24px;
     border: none;
@@ -122,7 +130,7 @@
     transition: background-color 0.2s ease;
   }
   
-  .reserveButton:hover {
-    background-color: #100080;
+  .addToCartButton:hover {
+    background-color: #085f1d;
   }
   
