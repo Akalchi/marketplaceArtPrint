@@ -10,7 +10,7 @@
 - Opportunity to develop skills, relax, and connect with others.
 
 ## Technologies Used
-- **Frontend**: React, React Router, Swiper.
+- **Frontend**: React v19, Swiper, Vitest v3.
 - **Styling**: CSS Modules.
 - **Authentication**: Login and registration form.
 
