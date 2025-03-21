@@ -6,7 +6,7 @@
     font-family: var(--font-text);
   }
   
-  /* ---------- Título ---------- */
+
   .pageTitleSection {
     background-color: var(--color-dark-green);
     color: white;
@@ -29,7 +29,7 @@
     margin: 0 auto;
   }
   
-  /* ---------- Contenedor ---------- */
+
   .container {
     max-width: 1200px;
     width: 100%;
@@ -37,7 +37,7 @@
     padding: 2rem 1rem;
   }
   
-  /* ---------- Buscador + Filtros ---------- */
+
   .searchFiltersContainer {
     background-color: #ffffff;
     border-radius: 12px;
@@ -109,7 +109,7 @@
     background-color: var(--color-medium-blue);
   }
   
-  /* ---------- Filtros ---------- */
+
   .filtersGrid {
     display: grid;
     grid-template-columns: 1fr;
@@ -158,7 +158,7 @@
     
   }
   
-  /* ---------- Encabezado experiencias ---------- */
+
   .experiencesHeader {
     display: flex;
     flex-direction: column;
@@ -201,7 +201,7 @@
     background-color: white;
   }
   
-  /* ---------- Grid de tarjetas ---------- */
+
   .experiencesGrid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -222,7 +222,7 @@
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   }
   
-  /* ---------- Botón Cargar más ---------- */
+
   .loadMoreContainer {
     display: flex;
     justify-content: center;

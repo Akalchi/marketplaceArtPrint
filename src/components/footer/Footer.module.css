@@ -76,7 +76,6 @@
   max-width: 1200px;
 }
 
-/* Responsive */
 @media (min-width: 768px) {
   .footerGrid {
     grid-template-columns: repeat(4, 1fr);

@@ -9,12 +9,10 @@ const ExperienceModal = ({ experience, onClose }) => {
   return ReactDOM.createPortal(
     <div className={styles.overlay} onClick={onClose}>
       <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
-        {/* Botón de cierre bien posicionado */}
         <button className={styles.closeButton} onClick={onClose}>
           <FiX size={24} />
         </button>
 
-        {/* Imagen y formato */}
         <div className={styles.imageWrapper}>
           <img
             src={experience.image || "/placeholder.svg"}
@@ -23,7 +21,6 @@ const ExperienceModal = ({ experience, onClose }) => {
           />
         </div>
 
-        {/* Contenido */}
         <div className={styles.content}>
           <h2 className={styles.title}>{experience.title}</h2>
           <p className={styles.meta}>
@@ -32,7 +29,6 @@ const ExperienceModal = ({ experience, onClose }) => {
           <p className={styles.description}>{experience.description}</p>
           <p className={styles.price}>{experience.price}€</p>
 
-          {/* Botón para añadir al carrito */}
           <button className={styles.addToCartButton}>Añadir al carrito</button>
         </div>
       </div>
