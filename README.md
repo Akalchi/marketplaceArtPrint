@@ -1,6 +1,6 @@
 # ArtPrint - Marketplace for Creative Experiences
+![readme](https://github.com/user-attachments/assets/2d32e565-ead9-40e4-8746-a18f3af5cdff)
 
-## Description
 **ArtPrint** is a digital marketplace that connects experience facilitators with curious individuals looking to explore new forms of expression and well-being. The platform offers workshops in disciplines such as writing, ceramics, photography, cooking, and more.
 
 ## Key Features
@@ -8,6 +8,9 @@
 - Intuitive platform for booking, discovering, and connecting with facilitators.
 - Direct support for creators and cultural entrepreneurs.
 - Opportunity to develop skills, relax, and connect with others.
+- 🔒 Secure inputs to protect against code injection attacks.
+- ✅ Includes unit tests for critical components and logic.
+
 
 ## Technologies Used
 - **Frontend**: React v19, Swiper, Vitest v3.
@@ -54,6 +57,21 @@
 - `/` - Homepage with HeroSection and experience categories.
 - `/catalog` - Experience catalog.
 - `/login` - Authentication form.
+
+## Testing
+
+    🧪 Unit tests are implemented to ensure the correctness of components and application logic.
+    Run tests with:
+
+    npm test
+
+## Security
+
+    All form inputs are validated and sanitized to prevent code injection and unauthorized backend access.
+
+Contributions
+
+If you would like to contribute to ArtPrint, please open an issue or submit a pull request with improvements.
 
 ## Contributions
 If you would like to contribute to **ArtPrint**, please open an issue or submit a pull request with improvements.
