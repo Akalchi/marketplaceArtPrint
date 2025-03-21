@@ -40,8 +40,8 @@ const ExperienciasPage = () => {
         filters.categories.length === 0 || filters.categories.includes(exp.category);
       const matchesFormat =
         filters.formats.length === 0 || filters.formats.includes(exp.format);
-     /*  const matchesCity =
-        filters.cities.length === 0 || filters.cities.includes(exp.location); */
+      const matchesCity =
+        filters.cities.length === 0 || filters.cities.includes(exp.location);
 
       let matchesPrice = true;
       if (filters.priceRange) {
@@ -49,7 +49,7 @@ const ExperienciasPage = () => {
         matchesPrice = exp.price >= min && exp.price <= max;
       }
 
-      return matchesCategory && matchesFormat && /* matchesCity *//*  &&  */matchesPrice;
+      return matchesCategory && matchesFormat && matchesCity &&  matchesPrice;
     });
 
   const sortedExperiences = [...filteredExperiences].sort((a, b) => {
@@ -73,7 +73,7 @@ const ExperienciasPage = () => {
 
       <div className={styles.container}>
         <div className={styles.searchFiltersContainer}>
-          {/* <div className={styles.searchContainer}>
+          <div className={styles.searchContainer}>
             <div className={styles.searchInputWrapper}>
               <FiSearch className={styles.searchIcon} />
               <input
@@ -85,7 +85,7 @@ const ExperienciasPage = () => {
               />
             </div>
             <button className={styles.searchButton}>Buscar</button>
-          </div> */}
+          </div>
 
           <div className={styles.filtersGrid}>
             <div className={styles.filterGroup}>
@@ -127,7 +127,7 @@ const ExperienciasPage = () => {
               </div>
             </div>
 
-           {/*  <div className={styles.filterGroup}>
+            <div className={styles.filterGroup}>
               <h3 className={styles.filterTitle}>Ciudades</h3>
               <div className={styles.filterOptions}>
                 {["Barcelona", "Madrid", "Valencia", "Sevilla", "Bilbao"].map((city) => (
@@ -142,7 +142,7 @@ const ExperienciasPage = () => {
                   </div>
                 ))}
               </div>
-            </div> */}
+            </div>
 
             <div className={styles.filterGroup}>
               <h3 className={styles.filterTitle}>Precio</h3>
@@ -173,7 +173,7 @@ const ExperienciasPage = () => {
         <div className={styles.experiencesHeader}>
           <h2 className={styles.experiencesCount}>{sortedExperiences.length} experiencias encontradas</h2>
           <div className={styles.sortContainer}>
-            {/* <span className={styles.sortLabel}>Ordenar por:</span>
+            <span className={styles.sortLabel}>Ordenar por:</span>
             <select
               className={styles.sortSelect}
               value={sortCriteria}
@@ -183,7 +183,7 @@ const ExperienciasPage = () => {
               <option value="price-asc">Precio: menor a mayor</option>
               <option value="price-desc">Precio: mayor a menor</option>
               <option value="recent">Más recientes</option>
-            </select> */}
+            </select>
           </div>
         </div>
 
