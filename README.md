@@ -60,6 +60,21 @@
 - `/catalog` - Experience catalog.
 - `/login` - Authentication form.
 
+## Testing
+
+    🧪 Unit tests are implemented to ensure the correctness of components and application logic.
+    Run tests with:
+
+    npm test
+
+## Security
+
+    All form inputs are validated and sanitized to prevent code injection and unauthorized backend access.
+
+Contributions
+
+If you would like to contribute to ArtPrint, please open an issue or submit a pull request with improvements.
+
 ## Contributions
 If you would like to contribute to **ArtPrint**, please open an issue or submit a pull request with improvements.
 
