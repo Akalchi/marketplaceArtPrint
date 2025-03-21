@@ -17,7 +17,7 @@ const experiences = [
     category: "Cerámica",
     location: "Barcelona",
     price: 65,
-    image: "/placeholder.svg?height=300&width=400",
+    image: "../../public/img/iniciacion-torno.webp?height=300&width=400",
     format: "Presencial",
   },
   {
@@ -26,7 +26,7 @@ const experiences = [
     category: "Escritura",
     location: "Online",
     price: 45,
-    image: "/placeholder.svg?height=300&width=400",
+    image: "../../public/img/escritura-creativa.webp?height=300&width=400",
     format: "Online",
   },
   {
@@ -35,7 +35,7 @@ const experiences = [
     category: "Acuarela",
     location: "Madrid",
     price: 55,
-    image: "/placeholder.svg?height=300&width=400",
+    image: "../../public/img/acuarela-botanica.webp?height=300&width=400",
     format: "Presencial",
   },
   {
@@ -44,7 +44,7 @@ const experiences = [
     category: "Cocina",
     location: "Valencia",
     price: 70,
-    image: "/placeholder.svg?height=300&width=400",
+    image: "../../public/img/cocina-vegana.webp?height=300&width=400",
     format: "Presencial",
   },
   {
@@ -53,7 +53,7 @@ const experiences = [
     category: "Fotografía",
     location: "Barcelona",
     price: 60,
-    image: "/placeholder.svg?height=300&width=400",
+    image: "../../public/img/fotografia-viajes.webp?height=300&width=400",
     format: "Presencial",
   },
   {
@@ -62,7 +62,7 @@ const experiences = [
     category: "Cosmética",
     location: "Online",
     price: 40,
-    image: "/placeholder.svg?height=300&width=400",
+    image: "../../public/img/cosmetica-natural.webp?height=300&width=400",
     format: "Online",
   },
 ];
@@ -79,11 +79,12 @@ const ExperienceCategories = () => {
             alt={experience.title}
             className={styles.experienceImage} />
           <h3>{experience.title}</h3>
+          <span className={styles.type}>{experience.format}</span>
           <p>
             {experience.category} · {experience.location}
           </p>
           <span className={styles.price}>{experience.price}€</span>
-          <span className={styles.type}>{experience.format}</span>
+          
           <button className={styles.detailsBtn}>Ver detalles</button>
         </div>
         ))}

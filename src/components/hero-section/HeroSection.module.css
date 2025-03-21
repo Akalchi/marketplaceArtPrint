@@ -34,8 +34,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    justify-self: center;
     color: white;
-    z-index: 2;
+    z-index: 1;
+    padding-bottom: 5rem;
+    size: 10rem;
 }
 
 .title {

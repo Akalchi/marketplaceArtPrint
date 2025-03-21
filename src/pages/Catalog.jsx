@@ -11,7 +11,7 @@ const experiences = [
     category: "Cerámica",
     location: "Barcelona",
     price: 65,
-    image: "/placeholder.svg",
+    image: "../../public/img/iniciacion-torno.webp",
     format: "Presencial",
   },
   {
@@ -20,7 +20,7 @@ const experiences = [
     category: "Escritura",
     location: "Online",
     price: 45,
-    image: "/placeholder.svg",
+    image: "../../public/img/escritura-creativa.webp",
     format: "Online",
   },
   {
@@ -29,7 +29,7 @@ const experiences = [
     category: "Acuarela",
     location: "Madrid",
     price: 55,
-    image: "/placeholder.svg",
+    image: "../../public/img/acuarela-botanica.webp",
     format: "Presencial",
   },
   {
@@ -38,7 +38,7 @@ const experiences = [
     category: "Cocina",
     location: "Valencia",
     price: 70,
-    image: "/placeholder.svg",
+    image: "../../public/img/cocina-vegana.webp",
     format: "Presencial",
   },
   {
@@ -47,7 +47,7 @@ const experiences = [
     category: "Bordado",
     location: "Sevilla",
     price: 50,
-    image: "/placeholder.svg",
+    image: "../../public/img/bordado-moderno.jpg",
     format: "Presencial",
   },
   {
@@ -56,7 +56,7 @@ const experiences = [
     category: "Cosmética",
     location: "Online",
     price: 40,
-    image: "/placeholder.svg",
+    image: "../../public/img/cosmetica-natural.webp",
     format: "Online",
   },
   {
@@ -65,7 +65,7 @@ const experiences = [
     category: "Encuadernación",
     location: "Bilbao",
     price: 60,
-    image: "/placeholder.svg",
+    image: "../../public/img/encuadernacion-japonesa.jpg",
     format: "Presencial",
   },
   {
@@ -74,13 +74,26 @@ const experiences = [
     category: "Bordado",
     location: "Online",
     price: 35,
-    image: "/placeholder.svg",
+    image: "../../public/img/macrame.jpg",
     format: "Online",
   },
 ];
 
 const ExperienciasPage = () => {
   const [selectedExperience, setSelectedExperience] = useState(null);
+
+  const openModal = (experience) => {
+    setSelectedExperience(experience);
+  };
+
+  const closeModal = () => {
+    console.log("Forzando cierre del modal...");
+    setSelectedExperience(null);
+    setTimeout(() => {
+      setSelectedExperience(null);
+    }, 10); // Asegura que React detecte el cambio
+  };
+  
 
   return (
     <div className={styles.experienciasPage}>
@@ -191,11 +204,11 @@ const ExperienciasPage = () => {
               <ExperienceCard
                 title={exp.title}
                 city={exp.location}
-                type={exp.format}
+                format={exp.format}
                 price={exp.price}
                 image={exp.image}
                 description="Una experiencia creativa para aprender y disfrutar."
-                onClick={() => setSelectedExperience(exp)}
+                onClick={() => openModal(exp)}
               />
             </div>
           ))}
@@ -207,10 +220,9 @@ const ExperienciasPage = () => {
       </div>
 
       {/* Modal */}
-      <ExperienceModal
-        experience={selectedExperience}
-        onClose={() => setSelectedExperience(null)}
-      />
+      {selectedExperience && (
+        <ExperienceModal experience={selectedExperience} onClose={closeModal} />
+      )}
     </div>
   );
 };

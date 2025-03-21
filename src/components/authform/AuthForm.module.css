@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 120px);
+  padding: 20px;
+}
+
+.form {
+  background: var(--color-beige);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form h2 {
+  margin-bottom: 1rem;
+  font-family: var(--font-title);
+  color: var(--color-dark-blue);
+}
+
+.inputGroup {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 90%;
+  padding: 0.8rem;
+  padding-right: 2.5rem;
+  border: 1px solid var(--color-brown);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.eyeIcon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--color-dark-blue);
+}
+
+.formButton {
+  width: 100%;
+  padding: 0.8rem;
+  background: var(--color-dark-blue);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.formButton:hover {
+  background: var(--color-medium-blue);
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.toggle {
+  margin-top: 1rem;
+  color: var(--color-dark-blue);
+  cursor: pointer;
+  text-decoration: underline;
+}
+.success {
+  margin-top: 1rem;
+  color: var(--color-dark-green);
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: var(--color-beige);
+  padding: 0.8rem;
+  border-radius: 4px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
