@@ -1,6 +1,8 @@
 # ArtPrint - Marketplace for Creative Experiences
 
-## Description
+
+## ![readme](https://github.com/user-attachments/assets/3e3b6ba8-67eb-421e-ac9f-f92170c8a541)
+
 **ArtPrint** is a digital marketplace that connects experience facilitators with curious individuals looking to explore new forms of expression and well-being. The platform offers workshops in disciplines such as writing, ceramics, photography, cooking, and more.
 
 ## Key Features
@@ -8,6 +10,9 @@
 - Intuitive platform for booking, discovering, and connecting with facilitators.
 - Direct support for creators and cultural entrepreneurs.
 - Opportunity to develop skills, relax, and connect with others.
+- 🔒 Secure inputs to protect against code injection attacks.
+- ✅ Includes unit tests for critical components and logic.
+
 
 ## Technologies Used
 - **Frontend**: React, React Router, Swiper.
